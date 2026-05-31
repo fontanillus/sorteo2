@@ -34,7 +34,7 @@ const mostrarRevisiones = (revisiones) => {
 
     // Convertimos cada revision en un bloque HTML y los unimos en un solo texto.
     resultado.innerHTML = revisiones.map((revision) => `
-        <div class="mb-3 rounded-lg bg-white/10 p-3 text-left">
+        <div class="mb-3 rounded-lg bg-white/10 p-3 text-left overflow-hidden">
             <p><strong>Revisor:</strong> ${revision.revisor}</p>
             <p><strong>Revisado:</strong> ${revision.revisado}</p>
             <p>
@@ -42,7 +42,7 @@ const mostrarRevisiones = (revisiones) => {
                 <a href="${revision.repositorio}"
                    target="_blank"
                    rel="noopener noreferrer"
-                   class="underline break-all">
+                   class="underline break-words [overflow-wrap:anywhere]">
                     ${revision.repositorio}
                 </a>
             </p>
