@@ -39,7 +39,10 @@ const mostrarRevisiones = (revisiones) => {
             <p><strong>Revisado:</strong> ${revision.revisado}</p>
             <p>
                 <strong>Repositorio:</strong>
-                <a href="${revision.repositorio}" target="_blank" rel="noopener noreferrer" class="underline">
+                <a href="${revision.repositorio}"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="underline break-all">
                     ${revision.repositorio}
                 </a>
             </p>
